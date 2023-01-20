@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImageWrapper from './NextImageWrapper';
 import React from 'react';
 
 import styles from '../styles/components/OfficerCard.module.scss';
@@ -21,7 +21,7 @@ function Officer({
     return (
       <div className={styles['mb-2']}>
         <div className={styles['jedi-profile-img']}>
-          <Image src={img} alt={alt} width={250} height={250}/>
+          <NextImageWrapper src={img} alt={alt} width={250} height={250}/>
         </div>
         <div className={styles['jedi-card-body']}>
           <h2 className={styles['jedi-title']}>
@@ -35,7 +35,7 @@ function Officer({
     return (
       <div className={styles['officer-grid-row']}>
         <div className={styles['officer-grid-col']}>
-          <Image
+          <NextImageWrapper
             className={styles['officer-image']}
             src={img}
             alt={alt}

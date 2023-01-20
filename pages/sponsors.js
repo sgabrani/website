@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../components/NextImageWrapper';
 import Link from 'next/link';
 import React from 'react';
 
@@ -36,12 +36,12 @@ function Sponsors() {
 				<div className="sponsor-container">
 					<div className="sponsor">
 						<a href="https://www.cs.ucla.edu" target="_blank" rel="noreferrer noopener">
-							<Image src={uclaCsDeptLogo} alt="UCLA CS Dept Logo" priority={true} />
+							<NextImageWrapper src={uclaCsDeptLogo} alt="UCLA CS Dept Logo" priority={true} />
 						</a>
 					</div>
 					<div className="sponsor">
 						<a href="https://reslife.ucla.edu" target="_blank" rel="noreferrer noopener">
-							<Image src={reslifeLogo} alt="UCLA ResLife Logo" priority={true} />
+							<NextImageWrapper src={reslifeLogo} alt="UCLA ResLife Logo" priority={true} />
 						</a>
 					</div>
 				</div>
@@ -49,7 +49,7 @@ function Sponsors() {
 				<div className="sponsor-container">
 					{sponsors.map(sponsor =>
 						<a className="block-centered sponsor" href={sponsor.link} target="_blank" rel="noreferrer noopener" key={sponsor.name}>
-							<Image
+							<NextImageWrapper
 								alt={sponsor.name}
 								src={sponsor.image}
 							/>
@@ -59,9 +59,9 @@ function Sponsors() {
 				<h2>Interested in becoming a sponsor?</h2>
 				<div className="button-section">
 					<Link href="mailto:acm@ucla.edu">
-						<a className="button">
+						<span className="button">
 							Contact Us at acm@ucla.edu
-						</a>
+						</span>
 					</Link>
 				</div>
 			</div>

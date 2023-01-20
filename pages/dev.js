@@ -32,7 +32,7 @@ function DevTeam() {
 				<p className={styles['dev-team-info']}>
 					If you&apos;re interested in joining us,&nbsp;
 					<Link href='https://uclaacm.com/internship'>
-						<a>apply to intern</a>
+						<span>apply to intern</span>
 					</Link>&nbsp;with the Dev Team!
 				</p>
 				<h2 className="text-center">Our Projects</h2>
@@ -52,7 +52,7 @@ function DevTeam() {
 					<h3>Membership Portal</h3>
 						<p className={styles['project-info']}>The&nbsp;
 							<Link href='https://members.uclaacm.com/'>
-								<a target='_blank' rel='noopener noreferrer'>Membership Portal</a>
+								<span target='_blank' rel='noopener noreferrer'>Membership Portal</span>
 							</Link>
 							{/* eslint-disable-next-line max-len */}
 							&nbsp;is where ACM members can check in to events to earn points! We built the Membership Portal with Node.js, Express.js, PostgreSQL, Redux and React.js.
@@ -60,14 +60,14 @@ function DevTeam() {
 					<h3>Discord Bot</h3>
 						<p className={styles['project-info']}>The Discord bot is our in-house email verification bot for the ACM at UCLA&nbsp;
 							<Link href='https://discord.gg/eWmzKsY'>
-								<a target='_blank' rel='noopener noreferrer'>Discord</a>
+								<span target='_blank' rel='noopener noreferrer'>Discord</span>
 							</Link>
 							&nbsp;server! It&apos;s written in JavaScript using the Discord API and Amazon SES.
 						</p>
 					<h3>Link Shortener</h3>
 						<p className={styles['project-info']}>The&nbsp;
 							<Link href='http://links.uclaacm.com/'>
-								<a target='_blank' rel='noopener noreferrer'>link shortener</a>
+								<span target='_blank' rel='noopener noreferrer'>link shortener</span>
 							</Link>
 							{/* eslint-disable-next-line max-len */}
 							&nbsp;is an ongoing project aimed at generating shortened links for use by our committees. The link shortener is built with Flask.</p>
@@ -79,11 +79,11 @@ function DevTeam() {
 				<p className={styles['project-info']}>
 					Everything we build is&nbsp;
 					<Link href='https://opensource.uclaacm.com/'>
-						<a target='_blank' rel='noopener noreferrer'>open source</a>
+						<span target='_blank' rel='noopener noreferrer'>open source</span>
 					</Link>!
 					In the spirit of open-source, anyone is welcome to view and contribute to our projects on&nbsp;
 					<Link href='https://github.com/uclaacm'>
-						<a target='_blank' rel='noopener noreferrer'>Github</a>
+						<span target='_blank' rel='noopener noreferrer'>Github</span>
 					</Link>.
 				</p>
 				<h2 className="text-center">People</h2>

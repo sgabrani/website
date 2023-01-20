@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../components/NextImageWrapper';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -36,7 +36,7 @@ function Impact() {
       <Banner decorative />
       <div className={styles.container}>
         <div className="text-center">
-          <Image src={impactMotifBanner} alt="Impact by ACM at UCLA" priority />
+          <NextImageWrapper src={impactMotifBanner} alt="Impact by ACM at UCLA" priority />
         </div>
 
         <h2 className="text-center">Tech Ethics.</h2>

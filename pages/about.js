@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../components/NextImageWrapper';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -81,7 +81,7 @@ function About() {
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
           >
-            <Image
+            <NextImageWrapper
               src={boardcollage}
               alt="images of events organised by ACM Board"
               priority={true}
@@ -102,7 +102,7 @@ function About() {
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
           >
-            <Image
+            <NextImageWrapper
               src={acmCommittees}
               alt="the logos of all ACM committees"
               priority={true}
@@ -121,7 +121,7 @@ function About() {
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
           >
-            <Image
+            <NextImageWrapper
               src={initiative}
               alt="the logos of all ACM intiatives"
               priority={true}
@@ -141,7 +141,7 @@ function About() {
           <div
             className={`${styles.ornament} ${styles['image-ornament']} ${styles['image-ornament-right']}`}
           >
-            <Image src={acmHowToJoin} alt="photos of acm events" />
+            <NextImageWrapper src={acmHowToJoin} alt="photos of acm events" />
           </div>
           <div className={styles['text-section']}>
             <h1>How do I get involved?</h1>

@@ -13,7 +13,7 @@ function NextSteps(props) {
         // <button className={styles['committee-card']} onClick={() => setFlipped(!isFlipped)} role='tab'>
         //     <div className={`${styles['next-steps-card-inner']} ${styles[isFlipped ? null : 'is-flipped']}`}>
         //         <div className={styles['next-steps-card-face']}>
-        //             <Image
+        //             <NextImageWrapper
         //                 src={image}
         //                 alt={`${name}'s card. Click to see more information.`}
         //                 layout='fill'

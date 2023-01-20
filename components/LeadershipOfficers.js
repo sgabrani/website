@@ -1,11 +1,11 @@
-import Image from 'next/image';
+import NextImageWrapper from './NextImageWrapper';
 import React from 'react';
 
 function Officer(props){
 	return (
 		<div className="officer-grid-row">
 			<div className="officer-grid-col">
-				<Image
+				<NextImageWrapper
 					className="officer-image"
 					src={props.officer.image}
 					alt={props.officer.name}

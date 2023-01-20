@@ -91,9 +91,9 @@ function GMCountdown(props) {
     <div className="text-center">
       <h1>Fall 2021 General Meeting</h1>
       <Link href={RSVP_LINK}>
-        <a className="button" target="_blank" rel="noreferrer noopener">
+        <span className="button" target="_blank" rel="noreferrer noopener">
           RSVP Now!
-        </a>
+        </span>
       </Link>
     </div>
     </>
@@ -135,7 +135,7 @@ function F21() {
             <div className="what-to-bring">
               <h3>What to bring</h3>
               <p>Required: Face Mask, Bruincard.</p>
-              <span>(learn more about how ACM is <Link href={'/covid'}><a target="_blank" rel="noreferrer noopener">committed to running COVID-safe events</a></Link> in our return to campus)</span>
+              <span>(learn more about how ACM is <Link href={'/covid'}><span target="_blank" rel="noreferrer noopener">committed to running COVID-safe events</span></Link> in our return to campus)</span>
               <p>Encouraged: Laptop or Phone to view slides, excitement to learn about ACM!</p>
             </div>
           </div>

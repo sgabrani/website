@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../components/NextImageWrapper';
 import React from 'react';
 
 import Banner from '../components/Banner';
@@ -15,7 +15,7 @@ function CommitteesBanner() {
 		<div className="committee-banner-container">
 			<div className="banner-main-content">
 				<div className="image-wrapper">
-					<Image src={acmCommittees} alt="the logos of all ACM committees" priority={true} />
+					<NextImageWrapper src={acmCommittees} alt="the logos of all ACM committees" priority={true} />
 				</div>
 				<div className="info">
 					<h1>Committees</h1>

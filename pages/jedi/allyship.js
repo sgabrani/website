@@ -33,7 +33,7 @@ function Allyship() {
         <h1>allyship spaces</h1>
         <p className={`${styles['desktop-half-width']}`}>
           {/* eslint-disable-next-line max-len */}
-          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, <Link href="/jedi/meet#contact"><a className={styles['jedi-link']}>let us know</a></Link>!
+          We hold allyship spaces on a bunch of different topics related to EDI; check out our past events below! Anyone can lead and attend an allyship space. If you have a topic you&apos;re interested in, <Link href="/jedi/meet#contact"><span className={styles['jedi-link']}>let us know</span></Link>!
         </p>
         {spaces.map((space, i) => <AllyshipSpaceCard {...space} key={space.title} priority={i < 2} /> )}
       </div>

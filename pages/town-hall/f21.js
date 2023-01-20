@@ -1,7 +1,7 @@
 import { faCalendarCheck, faFileAlt, faQuestion, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../../components/NextImageWrapper';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 
@@ -46,7 +46,7 @@ function TownHall() {
 			<Banner decorative />
 			<div className="content-container-tight">
         <div className="text-center">
-          <Image src={TownHallBanner} alt="A banner that reads 'Fall 2021 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 10 from 6:30 - 8:30 PM PT. Held at the Mong Auditorium and Online; visit uclaacm.com/town-hall for more information. Co-hosted by ACM at UCLA, UPE at UCLA, exploretech.la, and the UCLA Computer Science Department.'" />
+          <NextImageWrapper src={TownHallBanner} alt="A banner that reads 'Fall 2021 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 10 from 6:30 - 8:30 PM PT. Held at the Mong Auditorium and Online; visit uclaacm.com/town-hall for more information. Co-hosted by ACM at UCLA, UPE at UCLA, exploretech.la, and the UCLA Computer Science Department.'" />
           <h1>Fall 2021 Computer Science Town Hall</h1>
         </div>
         <p>
@@ -72,19 +72,19 @@ function TownHall() {
         </p>
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
-            <Link href="https://bit.ly/CSTownHallFall2021RSVP"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faCalendarCheck} fixedWidth aria-hidden={true} /> RSVP now!</a></Link>
+            <Link href="https://bit.ly/CSTownHallFall2021RSVP"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faCalendarCheck} fixedWidth aria-hidden={true} /> RSVP now!</span></Link>
           </li>
           {' '}
           <li style={inlineButtonListStyle}>
-            <Link href="#surveys"><a className="button"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Answer Survey Questions!</a></Link>
+            <Link href="#surveys"><span className="button"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Answer Survey Questions!</span></Link>
           </li>
           {' '}
           <li style={inlineButtonListStyle}>
-            <Link href="https://app.sli.do/event/jcaoo1z7"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuestion} fixedWidth aria-hidden={true} /> Ask questions in advance!</a></Link>
+            <Link href="https://app.sli.do/event/jcaoo1z7"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faQuestion} fixedWidth aria-hidden={true} /> Ask questions in advance!</span></Link>
           </li>
           {' '}
           <li style={inlineButtonListStyle}>
-            <Link href="https://docs.google.com/presentation/d/1IDtHk52HApxHTigT9aAXf0-fZNeYUQ9F9MYfHBybBNs/edit?usp=sharing"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFilePowerpoint} fixedWidth aria-hidden={true} /> Event Slides</a></Link>
+            <Link href="https://docs.google.com/presentation/d/1IDtHk52HApxHTigT9aAXf0-fZNeYUQ9F9MYfHBybBNs/edit?usp=sharing"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFilePowerpoint} fixedWidth aria-hidden={true} /> Event Slides</span></Link>
           </li>
         </ul>
         <hr />
@@ -102,20 +102,20 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="https://bit.ly/CSTownHallFall2021Curriculum"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Academics and Curriculum</a></Link>
+                <Link href="https://bit.ly/CSTownHallFall2021Curriculum"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Academics and Curriculum</span></Link>
               </li>
               {' '}
               <li style={inlineButtonListStyle}>
-                <Link href="https://bit.ly/CSTownHallFall2021Diversity"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Diversity and Inclusion</a></Link>
+                <Link href="https://bit.ly/CSTownHallFall2021Diversity"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Diversity and Inclusion</span></Link>
               </li>
               {' '}
               <li style={inlineButtonListStyle}>
-                <Link href="https://bit.ly/CSTownHallFall2021Honesty"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Academic Honesty</a></Link>
+                <Link href="https://bit.ly/CSTownHallFall2021Honesty"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Academic Honesty</span></Link>
               </li>
             </ul>
           </div>
           <div>
-            <Image src={TestimonialsCourseChanges} alt="A slide from the winter 2021 town hall titled 'courses studnets wish to see changes in', with several different examples (CS 111, 152A, 131, 1)" />
+            <NextImageWrapper src={TestimonialsCourseChanges} alt="A slide from the winter 2021 town hall titled 'courses studnets wish to see changes in', with several different examples (CS 111, 152A, 131, 1)" />
           </div>
         </div>
         <hr />
@@ -131,11 +131,11 @@ function TownHall() {
             </p>
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Form Summaries and Slides</a></Link>
+                <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Form Summaries and Slides</span></Link>
               </li>
               {' '}
               <li style={inlineButtonListStyle}>
-                <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"><a className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Event Notes</a></Link>
+                <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf"><span className="button" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFileAlt} fixedWidth aria-hidden={true} /> Event Notes</span></Link>
               </li>
             </ul>
           </div>

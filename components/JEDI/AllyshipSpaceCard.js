@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImageWrapper from '../NextImageWrapper';
 import Link from 'next/link';
 import React from 'react';
 
@@ -13,13 +13,13 @@ function AllyshipSpaceCard({ title, presenters, date, location, description, img
   return (
     <div className={`${styles['allyship-row']} ${styles['mb-2']}`}>
       <div className={styles['allyship-image']}>
-        <Image src={img} alt={alt} priority={priority} />
+        <NextImageWrapper src={img} alt={alt} priority={priority} />
       </div>
       <div>
         <h2 className={`${styles['allyship-title']}`}>{title}</h2>
         {/* wrapped in a fragment to allow for spacing */}
-        {rsvp && <><Link href={rsvp}><a className={styles['jedi-link']}>RSVP</a></Link>{' '}</>}
-        {slides && <><Link href={slides}><a className={styles['jedi-link']}>Slides</a></Link>{' '}</>}
+        {rsvp && <><Link href={rsvp}><span className={styles['jedi-link']}>RSVP</span></Link>{' '}</>}
+        {slides && <><Link href={slides}><span className={styles['jedi-link']}>Slides</span></Link>{' '}</>}
         <p className={`${styles['my-tight']} ${styles['allyship-presenters']}`}>by { presenters }</p>
         <p className={styles['my-tight']}><em>{date} | { location }</em></p>
         <p className={styles['my-tight']}>

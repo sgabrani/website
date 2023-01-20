@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImageWrapper from './NextImageWrapper';
 import React from 'react';
 
 // width of each img in px
@@ -25,7 +25,7 @@ export default class Carousel extends React.Component {
 						key={i}
 						tabIndex="-1"
 						>
-							<Image src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="" />
+							<NextImageWrapper src={item} width={IMAGE_WIDTH} height={IMAGE_WIDTH} alt="" />
 					</a>),
 			});
 		}

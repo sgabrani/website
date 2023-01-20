@@ -23,7 +23,7 @@ const footerInitiativeLinks = [
 function FooterLinkElement({ title, path, ext }){
 	return (
 		<Link href={path}>
-			<a className={styles['link-footer']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</a>
+			<span className={styles['link-footer']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{title}</span>
 		</Link>
 	);
 }
@@ -39,9 +39,9 @@ function Footer(){
 						<SocialMedia type="light"/>
 						<div className="mt-1">
 							<Link href="http://eepurl.com/c5pE6P">
-								<a className="button tight" target="_blank" rel="noreferrer noopener">
+								<span className="button tight" target="_blank" rel="noreferrer noopener">
 									Join our Mailing List
-								</a>
+								</span>
 							</Link>
 						</div>
 						<p className={styles['footer-header']}>Reach us at</p>
@@ -74,7 +74,7 @@ function Footer(){
 										<li key={slug}>
 											<FooterLinkElement
 												path={path}
-												/* TODO: resolve 404 with <Image /> component */
+												/* TODO: resolve 404 with <NextImageWrapper /> component */
 												/* eslint-disable-next-line @next/next/no-img-element */
 												title={<img className='committee-sidebar-image' src={wordmark_dark} alt={`ACM ${name}`} />}
 												ext={external_link}
@@ -88,7 +88,7 @@ function Footer(){
 				</div>
 				<div className="mt-1">
 					<a href="https://www.netlify.com" target="_BLANK" rel="noopener noreferrer">
-						{/* TODO: resolve 404 with <Image /> component */}
+						{/* TODO: resolve 404 with <NextImageWrapper /> component */}
 						{/* eslint-disable-next-line @next/next/no-img-element */}
 						<img src="https://www.netlify.com/img/global/badges/netlify-light.svg" alt="Deploys by Netlify" />
 					</a>

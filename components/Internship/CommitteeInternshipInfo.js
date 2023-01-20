@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImageWrapper from '../NextImageWrapper';
 import React, {useState} from 'react';
 
 import styles from '../../styles/components/Internship/CommitteeInternshipInfo.module.scss';
@@ -17,11 +17,11 @@ function CommitteeInternshipInfo(props) {
                         onClick={()=>setCommitteeName(committee.name)}
                         style={{ borderBottom: committeeName === committee.name ? '1px solid grey': ''}}
                     >
-                        <Image
+                        <NextImageWrapper
                             src={committee.diamond}
                             alt={`ACM ${committee.name}`}
-                            width="100px"
-                            height="100px"
+                            width={100}
+                            height={100}
                         />
                     </button>,
                 )}
@@ -30,7 +30,7 @@ function CommitteeInternshipInfo(props) {
                 committeeName === committee.name ?
                 <div className={`${styles['committee-internship-info']} ${styles[committee.class]}`} key={committee.name}>
                     <h2 className={styles['committee-image']}>
-                        <Image
+                        <NextImageWrapper
                             src={committee.image}
                             alt={`${committee.name}'s wordmark`}
                             layout='fill'

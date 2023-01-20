@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImageWrapper from '../NextImageWrapper';
 import React from 'react';
 
 import styles from '../../styles/pages/impact.module.scss';
@@ -8,7 +8,7 @@ export default function WorkshopCard({title, description, quarter, img, alt, des
 	return (
 		<div className={`${styles['workshop-card']} ${gridStyle}`}>
 			<div className={styles['workshop-image-container']}>
-				<Image src={img} alt={alt} />
+				<NextImageWrapper src={img} alt={alt} />
 			</div>
 			<div>
 				<h4 className={styles['impact-event-header']}>{title}</h4>

@@ -25,7 +25,7 @@ function SelectedEvent({ event }) {
         <p className={styles.description}>{description}</p>
         {(links && links.length > 0) &&
           <ul className="list-unstyled">
-            {links.map(({ text, href, ext }) => <li key={href}><Link href={href}><a className={styles['event-link']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{text}</a></Link></li>)}
+            {links.map(({ text, href, ext }) => <li key={href}><Link href={href}><span className={styles['event-link']} target={ext ? '_blank': ''} rel={ext ? 'noopener noreferrer' : ''}>{text}</span></Link></li>)}
           </ul>
         }
       </div>

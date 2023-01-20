@@ -15,11 +15,11 @@ export default function Navbar() {
     <nav id="navbar">
       <section id="nav-container">
         <Link href="/">
-          <a id="nav-title" className="nav-section left" aria-label="acm home">
+          <span id="nav-title" className="nav-section left" aria-label="acm home">
             {/* TODO: resolve next/image issue */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={'/images/acm_wordmark_chapter.svg'} id="acm-logo" alt="ACM at UCLA" />
-          </a>
+          </span>
         </Link>
         <section id="nav-items-container">
           <button className={menuActive ? 'active' : ''} id="hamburger" type="button" onClick={menuActivate} aria-label="navigation menu" aria-expanded={menuActive} tabIndex="0">
@@ -53,7 +53,7 @@ export default function Navbar() {
               </li>
               <li><ActiveLink activeClassName="active" href="/events" passHref={true}><button type="button" role="link" onClick={menuActivate}>Events</button></ActiveLink></li>
               <li><ActiveLink activeClassName="active" href="/internship" passHref={true}><button type="button" role="link" onClick={menuActivate}>Join Us</button></ActiveLink></li>
-              <li><Link href="https://members.uclaacm.com"><a className="button button-transparent button-lg font-header">Member Login</a></Link>
+              <li><Link href="https://members.uclaacm.com"><span className="button button-transparent button-lg font-header">Member Login</span></Link>
               </li>
             </ul>
           </section>

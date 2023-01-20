@@ -39,23 +39,23 @@ function Meet() {
         <p className="text-center">
           not pictured:&nbsp;
           <Link href="https://arjunsubramonian.github.io/">
-            <a
+            <span
               className={styles['jedi-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
               Arjun
-            </a>
+            </span>
           </Link>
           &nbsp; and&nbsp;
           <Link href="https://sharvani.urspace.io/">
-            <a
+            <span
               className={styles['jedi-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
               Sharvani
-            </a>
+            </span>
           </Link>
           , who we wouldn&apos;t have JEDI without!
         </p>

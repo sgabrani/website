@@ -1,7 +1,7 @@
 import { faCalendarCheck, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NextImageWrapper from '../../components/NextImageWrapper';
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 
@@ -47,7 +47,7 @@ function TownHall() {
       <Banner decorative />
       <div className="content-container-tight">
         <div className="text-center">
-          <Image
+          <NextImageWrapper
             src={TownHallBanner}
             alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
           />
@@ -68,7 +68,7 @@ function TownHall() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <a>Town Hall Survey</a>
+            <span>Town Hall Survey</span>
           </Link>{' '}
           to get dinner!). To attend,{' '}
           <Link
@@ -76,7 +76,7 @@ function TownHall() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <a>please RSVP!</a>
+            <span>please RSVP!</span>
           </Link>{' '}
         </p>
         <p>
@@ -95,26 +95,26 @@ function TownHall() {
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
             <Link href="https://tinyurl.com/22town-hall-rsvp">
-              <a className="button" target="_blank" rel="noopener noreferrer">
+              <span className="button" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faCalendarCheck}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
                 RSVP now!
-              </a>
+              </span>
             </Link>
           </li>{' '}
           <li style={inlineButtonListStyle}>
             <Link href="#surveys">
-              <a className="button">
+              <span className="button">
                 <FontAwesomeIcon
                   icon={faFileAlt}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
                 Answer Survey Questions!
-              </a>
+              </span>
             </Link>
           </li>
         </ul>
@@ -138,18 +138,18 @@ function TownHall() {
               event.
             </p>
             <Link href="https://tinyurl.com/cs-town-hall-s22">
-              <a className="button" target="_blank" rel="noopener noreferrer">
+              <span className="button" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faFileAlt}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
                 CS Town Hall Survey
-              </a>
+              </span>
             </Link>
           </div>
           <div>
-            <Image
+            <NextImageWrapper
               src={TestimonialsCourseChanges}
               alt="A slide from the winter 2021 town hall titled 'courses studnets wish to see changes in', with several different examples (CS 111, 152A, 131, 1)"
             />
@@ -171,7 +171,7 @@ function TownHall() {
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -182,12 +182,12 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Form Summaries and Slides
-                  </a>
+                  </span>
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -198,13 +198,13 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Event Notes
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <Image
+            <NextImageWrapper
               src={TownHallFall2021Attending}
               alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
               width={embedWidth}
@@ -225,7 +225,7 @@ function TownHall() {
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -236,12 +236,12 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Form Summaries and Slides
-                  </a>
+                  </span>
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -252,7 +252,7 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Event Notes
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>

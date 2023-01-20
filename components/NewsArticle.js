@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImageWrapper from './NextImageWrapper';
 import React from 'react';
 
 function Article(props) {
@@ -8,7 +8,7 @@ function Article(props) {
 			href={props.article.link}
 		>
 			<div className="achievement">
-				<Image
+				<NextImageWrapper
 					src={props.article.image}
 					width={360}
 					height={200}

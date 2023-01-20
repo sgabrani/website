@@ -10,9 +10,9 @@ function ContentBanner({ title, ctaText, ctaLink }) {
                 </div>
                 <div id="banner-right" className="half-width">
                     <Link href={ctaLink}>
-                        <a className="button tight dark">
+                        <span className="button tight dark">
                             {ctaText}
-                        </a>
+                        </span>
                     </Link>
                 </div>
 			</div>

@@ -1,7 +1,7 @@
 import { faCalendarCheck, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../../components/NextImageWrapper';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 
@@ -46,7 +46,7 @@ function TownHall() {
       <Banner decorative />
       <div className="content-container-tight">
         <div className="text-center">
-          <Image
+          <NextImageWrapper
             src={TownHallBanner}
             alt="A banner that reads 'Fall 2022 Computer Science Town Hall: ask questions and get your voice heard! Wednesday, November 9th from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
           />
@@ -82,26 +82,26 @@ function TownHall() {
         <ul className="list-unstyled text-center">
           <li style={inlineButtonListStyle}>
             <Link href="https://docs.google.com/presentation/d/14MIk1bzHHr5b11cgYX_kAz5WQa6ToKD_9nnj3_5DLco/edit?usp=sharing">
-              <a className="button" target="_blank" rel="noopener noreferrer">
+              <span className="button" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faCalendarCheck}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
                 Form Summaries and Slides
-              </a>
+              </span>
             </Link>
           </li>{' '}
           <li style={inlineButtonListStyle}>
             <Link href="https://docs.google.com/document/d/1JTFaP27OsqA0sBhjbIC4mIzjCgqRLJyBxvOQ5FSrPCk/edit?usp=sharing">
-              <a className="button" target = "_blank">
+              <span className="button" target = "_blank">
                 <FontAwesomeIcon
                   icon={faFileAlt}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
                 Meeting Notes
-              </a>
+              </span>
             </Link>
           </li>
         </ul>
@@ -125,18 +125,18 @@ function TownHall() {
               event.
             </p>
             <Link href="https://forms.gle/V1YHJSStjWncMGKQ8">
-              <a className="button" target="_blank" rel="noopener noreferrer">
+              <span className="button" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faFileAlt}
                   fixedWidth
                   aria-hidden={true}
                 />{' '}
                 CS Town Hall Survey
-              </a>
+              </span>
             </Link>
           </div>
           <div>
-            <Image
+            <NextImageWrapper
               src={TestimonialsCourseChanges}
               alt="A slide from the winter 2021 town hall titled 'courses students wish to see changes in', with several different examples (CS 111, 152A, 131, 1)"
             />
@@ -158,7 +158,7 @@ function TownHall() {
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
                 <Link href="https://docs.google.com/presentation/d/1L9dSMVUr1TSazZu0-LqSHRSjEMMOO4GG-kZlOrkAjOM/edit?usp=sharing">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -169,12 +169,12 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Form Summaries and Slides
-                  </a>
+                  </span>
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
                 <Link href="https://docs.google.com/document/d/1QADyPwSqwf4cS_O51klvqA8dAcNlOXF1zT5YThi78q4/edit?usp=sharing">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -185,13 +185,13 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Event Notes
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <Image
+            <NextImageWrapper
               src={SpringTownhallImage}
               alt="A photograph from the Spring 2022 Computer Science Town Hall. Professor Eggert is introducing himself and other professors are sitting beside him."
               width={embedWidth}
@@ -212,7 +212,7 @@ function TownHall() {
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Fall 2021 Slides.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -223,12 +223,12 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Form Summaries and Slides
-                  </a>
+                  </span>
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Fall 2021 Notes.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -239,13 +239,13 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Event Notes
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <Image
+            <NextImageWrapper
               src={TownHallFall2021Attending}
               alt="A banner that reads 'Spring 2022 Computer Science Town Hall: ask questions and be heard! Wednesday, May 11 from 6:00 - 8:00 PM PT. Mong Learning Center, Engineering VI. Ask Questions and get your voice heard!'"
               width={embedWidth}
@@ -266,7 +266,7 @@ function TownHall() {
             <ul className="list-unstyled">
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Winter 2021 Slides.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -277,12 +277,12 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Form Summaries and Slides
-                  </a>
+                  </span>
                 </Link>
               </li>{' '}
               <li style={inlineButtonListStyle}>
                 <Link href="/files/town-hall/CS Town Hall Winter 2021 Notes.pdf">
-                  <a
+                  <span
                     className="button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -293,7 +293,7 @@ function TownHall() {
                       aria-hidden={true}
                     />{' '}
                     Event Notes
-                  </a>
+                  </span>
                 </Link>
               </li>
             </ul>

@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
+import NextImageWrapper from '../../components/NextImageWrapper';
 import Link from 'next/link';
 import React from 'react';
 import Countdown from 'react-countdown';
@@ -45,7 +45,7 @@ function countdownRenderer({ days, hours, minutes, seconds, completed }) {
         <div className="should-dim">
           <a href="https://docs.google.com/presentation/d/1N_J_FSFWX7PGVCE8qwiRUvLJud4LYEA3SeS3pdaw5aE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <div className="button-wrapper">
-              <Image
+              <NextImageWrapper
                 src = {googleSlideLogo}
                 alt="Google Slides logo"
                 className="join-links-img"
@@ -97,9 +97,9 @@ function GMCountdown(props) {
     <div className="text-center">
       <h1>Fall 2022 General Meeting</h1>
       <Link href={RSVP_LINK}>
-        <a className="button" target="_blank" rel="noreferrer noopener">
+        <span className="button" target="_blank" rel="noreferrer noopener">
           RSVP Now!
-        </a>
+        </span>
       </Link>
     </div>
     </>
@@ -126,7 +126,7 @@ function F22() {
 			/>
 			<Banner decorative />
       <div className="text-center">
-        <Image
+        <NextImageWrapper
           src = {fallGMgraphic}
           className="gm-graphic"
           alt="Fall GM 2021 Marketing Graphic. Fall GM will happen on Monday, september 26th from 6pm to 8pm in Ackerman Grand ballroom"/>
@@ -165,22 +165,22 @@ function F22() {
               <h3>Committee Presentations</h3>
               <p className="sub-heading">Learn what ACM&apos;s eight committees have planned for Fall quarter.</p>
             </div>
-            <p className="gm-program-row"><Image src= {studioLogo} alt="ACM studio"/> Caroline Wang, Ray Hsiao</p>
-            <p className="gm-program-row"><Image src= {icpcLogo} alt="ACM icpc"/> Robert Lee</p>
-            <p className="gm-program-row"><Image src= {designLogo}  alt="ACM design"/> Muthu Palaniappan</p>
-            <p className="gm-program-row"><Image src= {cyberLogo}  alt="ACM cyber"/> Jerry Xu, Stephen Kelman</p>
-            <p className="gm-program-row"><Image src= {teachlaLogo}  alt="ACM teachLA"/> Jiin Kim, Milo Kearney</p>
-            <p className="gm-program-row"><Image src= {wLogo}  alt="ACM w"/> Ethan Wong, Paige Brown</p>
-            <p className="gm-program-row"><Image src= {aiLogo}  alt="ACM ai"/> Aman Oberoi</p>
-            <p className="gm-program-row"><Image src= {hackLogo}  alt="ACM hack"/> Christina Tong, Nareh Agazaryan</p>
+            <p className="gm-program-row"><NextImageWrapper src= {studioLogo} alt="ACM studio"/> Caroline Wang, Ray Hsiao</p>
+            <p className="gm-program-row"><NextImageWrapper src= {icpcLogo} alt="ACM icpc"/> Robert Lee</p>
+            <p className="gm-program-row"><NextImageWrapper src= {designLogo}  alt="ACM design"/> Muthu Palaniappan</p>
+            <p className="gm-program-row"><NextImageWrapper src= {cyberLogo}  alt="ACM cyber"/> Jerry Xu, Stephen Kelman</p>
+            <p className="gm-program-row"><NextImageWrapper src= {teachlaLogo}  alt="ACM teachLA"/> Jiin Kim, Milo Kearney</p>
+            <p className="gm-program-row"><NextImageWrapper src= {wLogo}  alt="ACM w"/> Ethan Wong, Paige Brown</p>
+            <p className="gm-program-row"><NextImageWrapper src= {aiLogo}  alt="ACM ai"/> Aman Oberoi</p>
+            <p className="gm-program-row"><NextImageWrapper src= {hackLogo}  alt="ACM hack"/> Christina Tong, Nareh Agazaryan</p>
 					</div>
           <div className="gm-program-section">
             <div className="section-header">
               <h3>ACM Board</h3>
               <p className="sub-heading">How to get more involved with ACM beyond attending workshops and events</p>
             </div>
-            <p className="gm-program-row"><Image src= {boardLogo} alt="ACM board"/>&nbsp;&nbsp;External: Zack Pakin</p>
-            <p className="gm-program-row"><Image src= {boardLogo} alt="ACM board"/>&nbsp;&nbsp;Internal: Sujay Jain</p>
+            <p className="gm-program-row"><NextImageWrapper src= {boardLogo} alt="ACM board"/>&nbsp;&nbsp;External: Zack Pakin</p>
+            <p className="gm-program-row"><NextImageWrapper src= {boardLogo} alt="ACM board"/>&nbsp;&nbsp;Internal: Sujay Jain</p>
           </div>
           <div className="gm-program-section">
             <div className="section-header">
